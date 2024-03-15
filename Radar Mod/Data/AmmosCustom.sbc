@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ammos>
+        <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>Chaff</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>39000</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1200</MaxTrajectory>
+                <IsExplosive>false</IsExplosive>
+                <BackkickForce>0</BackkickForce>
+                <PhysicalMaterial>MediumShell</PhysicalMaterial>
+                <EndOfLifeSound></EndOfLifeSound>
+            </BasicProperties>
+            <MissileProperties>
+                <MissileMass>300</MissileMass>
+                <MissileExplosionRadius>0</MissileExplosionRadius>
+                <MissileModelName>Models\Weapons\ChaffStrip.mwm</MissileModelName>
+                <MissileAcceleration>0</MissileAcceleration>
+                <MissileInitialSpeed>200</MissileInitialSpeed>
+                <MissileSkipAcceleration>false</MissileSkipAcceleration>
+                <MissileExplosionDamage>0</MissileExplosionDamage>
+                <MissileHealthPool>100</MissileHealthPool>
+                <MissileTrailEffect></MissileTrailEffect>
+                <MissileGravityEnabled>true</MissileGravityEnabled>
+                <MissileRicochetAngle>80</MissileRicochetAngle>
+                <MissileRicochetProbability>1</MissileRicochetProbability>
+            </MissileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>Flare</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>39000</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>480</MaxTrajectory>
+                <IsExplosive>true</IsExplosive>
+                <BackkickForce>0</BackkickForce>
+                <PhysicalMaterial>Flare</PhysicalMaterial>
+                <ExplosiveDamageMultiplier>0.01</ExplosiveDamageMultiplier>
+                <EndOfLifeSound></EndOfLifeSound>
+                <EndOfLifeEffect>Explosion_Flare</EndOfLifeEffect>
+            </BasicProperties>
+            <MissileProperties>
+                <MissileMass>1</MissileMass>
+                <MissileExplosionRadius>3</MissileExplosionRadius>
+                <MissileModelName>Models\Weapons\FlareAmmo.mwm</MissileModelName>
+                <MissileAcceleration>0</MissileAcceleration>
+                <MissileInitialSpeed>50</MissileInitialSpeed>
+                <MissileSkipAcceleration>false</MissileSkipAcceleration>
+                <MissileExplosionDamage>0</MissileExplosionDamage>
+                <MissileHealthPool>3</MissileHealthPool>
+                <MissileTrailEffect>Smoke_Flare</MissileTrailEffect>
+                <MissileGravityEnabled>true</MissileGravityEnabled>
+                <MissileMinRicochetAngle>0</MissileMinRicochetAngle>
+                <MissileMaxRicochetAngle>80</MissileMaxRicochetAngle>
+                <MissileMinRicochetProbability>0.5</MissileMinRicochetProbability>
+                <MissileMaxRicochetProbability>1</MissileMaxRicochetProbability>
+                <MissileRicochetDamage>1</MissileRicochetDamage>
+                <ExplosionFlags>AFFECT_VOXELS APPLY_FORCE_AND_DAMAGE CREATE_DECALS CREATE_SHRAPNELS APPLY_DEFORMATION FORCE_CUSTOM_END_OF_LIFE_EFFECT</ExplosionFlags>
+            </MissileProperties>
+        </Ammo>
+
+  </Ammos>
+</Definitions>

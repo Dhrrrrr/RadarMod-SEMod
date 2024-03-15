@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarFOFSmall</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Friend or Foe module</DisplayName>
+			<Description>Shows whether the targetted grid is friendly or not</Description>
+			<Icon>Icons\SmallAdvancedModule.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\AdvancedDirectedRadarUpgradeSmall.mwm</Model>
+			<Components>
+        			<Component Subtype="SteelPlate" Count="5" />
+       				<Component Subtype="Construction" Count="10" />
+      				<Component Subtype="SmallTube" Count="8" />
+        			<Component Subtype="CopperWire" Count="40" />
+        			<Component Subtype="GoldWire" Count="20" />
+				<Component Subtype="Computer" Count="50" />
+        			<Component Subtype="AdvancedComputer" Count="15" />
+        			<Component Subtype="SteelPlate" Count="10" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.02" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.93" StartY="0.02" EndX="1.00" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.01" StartY="0.02" EndX="0.14" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.92" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.93" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.03" EndX="1.00" EndY="1.97"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.02" EndX="1.00" EndY="0.98"/>
+				<MountPoint Side="Bottom" StartX="0.02" StartY="0.00" EndX="0.98" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarFOFUpgrade</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarAdvancedTargettingSmall</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Advanced Targetting module</DisplayName>
+			<Description>Shows advanced information on radar target</Description>
+			<Icon>Icons\SmallAdvancedModule.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\AdvancedDirectedRadarUpgradeSmall.mwm</Model>
+			<Components>
+        			<Component Subtype="SteelPlate" Count="5" />
+       				<Component Subtype="Construction" Count="10" />
+      				<Component Subtype="SmallTube" Count="8" />
+        			<Component Subtype="CopperWire" Count="40" />
+        			<Component Subtype="GoldWire" Count="20" />
+				<Component Subtype="Computer" Count="50" />
+        			<Component Subtype="AdvancedComputer" Count="15" />
+        			<Component Subtype="SteelPlate" Count="10" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.02" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.93" StartY="0.02" EndX="1.00" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.01" StartY="0.02" EndX="0.14" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.92" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.07" StartY="0.01" EndX="0.93" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.03" EndX="1.00" EndY="1.97"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.02" EndX="1.00" EndY="0.98"/>
+				<MountPoint Side="Bottom" StartX="0.02" StartY="0.00" EndX="0.98" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarAdvancedTargettingUpgrade</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

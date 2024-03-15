@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarRangeUpgrade</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Range Upgrade Large</DisplayName>
+			<Description>Increases range of General radar</Description>
+			<Icon>Icons\LargeStandardModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\StandardDirectedRadarUpgradeLarge.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="15" />
+      				<Component Subtype="Capacitor" Count="10" />
+      				<Component Subtype="Superconductor" Count="20" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="100" />
+        			<Component Subtype="AdvancedComputer" Count="50" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.90" StartY="0.02" EndX="0.98" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="0.12" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.86" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Left" StartX="0.01" StartY="0.00" EndX="0.22" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.79" StartY="0.00" EndX="0.99" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.01" EndX="0.22" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.79" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Top" StartX="0.01" StartY="0.00" EndX="0.10" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.91" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.09" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.92" StartY="0.00" EndX="0.99" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarRangeUpgrade</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarAccuracyUpgrade</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Accuracy Upgrade Large</DisplayName>
+			<Description>Increases accuracy of General radar</Description>
+			<Icon>Icons\LargeStandardModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\StandardDirectedRadarUpgradeLarge.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="15" />
+      				<Component Subtype="Capacitor" Count="10" />
+      				<Component Subtype="Superconductor" Count="20" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="100" />
+        			<Component Subtype="AdvancedComputer" Count="50" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.90" StartY="0.02" EndX="0.98" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="0.12" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.86" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Left" StartX="0.01" StartY="0.00" EndX="0.22" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.79" StartY="0.00" EndX="0.99" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.01" EndX="0.22" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.79" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Top" StartX="0.01" StartY="0.00" EndX="0.10" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.91" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.09" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.92" StartY="0.00" EndX="0.99" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarAccuracyUpgrade</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarCountermeasureUpgrade</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Countermeasure Upgrade</DisplayName>
+			<Description>Reduces the effects countermeasures have on radar</Description>
+			<Icon>Icons\LargeStandardModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\StandardDirectedRadarUpgradeLarge.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="15" />
+      				<Component Subtype="Capacitor" Count="10" />
+      				<Component Subtype="Superconductor" Count="20" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="100" />
+        			<Component Subtype="AdvancedComputer" Count="50" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.90" StartY="0.02" EndX="0.98" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="0.12" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.86" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Left" StartX="0.01" StartY="0.00" EndX="0.22" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.79" StartY="0.00" EndX="0.99" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.01" EndX="0.22" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.79" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Top" StartX="0.01" StartY="0.00" EndX="0.10" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.91" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.09" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.92" StartY="0.00" EndX="0.99" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarCountermeasureUpgrade</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>GeneralRadarStealthUpgrade</SubtypeId>
+			</Id>
+			<DisplayName>General Radar Stealth Upgrade</DisplayName>
+			<Description>Reduces the effects countermeasures have on radar</Description>
+			<Icon>Icons\LargeStandardModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\StandardDirectedRadarUpgradeLarge.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="15" />
+      				<Component Subtype="Capacitor" Count="10" />
+      				<Component Subtype="Superconductor" Count="20" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="100" />
+        			<Component Subtype="AdvancedComputer" Count="50" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.11" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.90" StartY="0.02" EndX="0.98" EndY="1.98"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="0.12" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.86" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Left" StartX="0.01" StartY="0.00" EndX="0.22" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.79" StartY="0.00" EndX="0.99" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.01" EndX="0.22" EndY="1.99"/>
+				<MountPoint Side="Right" StartX="0.79" StartY="0.01" EndX="1.00" EndY="1.99"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Top" StartX="0.01" StartY="0.00" EndX="0.10" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.91" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.09" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.92" StartY="0.00" EndX="0.99" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadarStealthUpgrade</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

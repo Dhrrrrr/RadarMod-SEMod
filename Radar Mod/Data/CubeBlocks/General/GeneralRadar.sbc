@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+			<Id>
+				<TypeId>RadioAntenna</TypeId>
+				<SubtypeId>GeneralRadarSmall</SubtypeId>
+			</Id>
+			<DisplayName>Small General Radar</DisplayName>
+			<Description>Weak and short ranged detection, but in all directions</Description>
+			<Icon>Icons\SmallGeneralRadar.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="1" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GeneralRadarSmall.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="3" />
+				<Component Subtype="Construction" Count="2" />
+				<Component Subtype="Electromagnet" Count="8" />
+				<Component Subtype="LargeTube" Count="5" />
+				<Component Subtype="CopperWire" Count="10" />
+				<Component Subtype="Computer" Count="20" />
+				<Component Subtype="AdvancedComputer" Count="25" />
+				<Component Subtype="SteelPlate" Count="2" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Top" StartX="1.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="1.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>GeneralRadar</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

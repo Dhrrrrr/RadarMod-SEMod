@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>StealthPlatePrint</SubtypeId>
+            </Id>
+            <DisplayName>Stealth Plate</DisplayName>
+            <Icon>Icons\StealthPlate.png</Icon>
+            <Prerequisites>
+                <Item Amount="5" TypeId="Component" SubtypeId="Rubber" />
+                <Item Amount="2" TypeId="Component" SubtypeId="Plastic" />
+                <Item Amount="1" TypeId="Component" SubtypeId="TitaniumPlate" />
+                <Item Amount="0.5" TypeId="Ingot" SubtypeId="Platinum" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="Component" SubtypeId="StealthPlate" />
+            <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+            <IsPrimary>true</IsPrimary>
+        </Blueprint>
+		
+    </Blueprints>
+</Definitions>

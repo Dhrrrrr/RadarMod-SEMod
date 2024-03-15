@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ArmorStealthCubeGroup" />
+            <Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCube" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthSlope" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthInvCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCornerSquare" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCornerSquareInv" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCube" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthSlope" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthInvCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCornerSquare" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCornerSquareInv" />
+            </Blocks>
+        </BlockVariantGroup>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ArmorStealthRampGroup" />
+            <Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthSlope2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthSlope2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeHalfStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeHalfSlopeStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeHalfSlopeCornerStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthHalfCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthHalfSlopedCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthSlope2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthSlope2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallHalfStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallHalfSlopeStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallHalfSlopeCornerStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthHalfCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthHalfSlopedCorner" />
+            </Blocks>
+        </BlockVariantGroup>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ArmorStealthRampCornerGroup" />
+            <Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCorner2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthCorner2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthInvCorner2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthInvCorner2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeHalfSlopeCornerInvStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeHalfSlopeInvStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCorner2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthCorner2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthInvCorner2x1x1Base" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthInvCorner2x1x1Tip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallHalfSlopeCornerInvStealth" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallHalfSlopeInvStealth" />
+            </Blocks>
+        </BlockVariantGroup>
+		
+		<BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ArmorStealthSlopedCorners" />
+            <Blocks>
+                <Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeSlopedCornerStealthTip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthSlopedCornerBase" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthSlopedCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="LargeStealthHalfSlopedCornerBase" />
+                		<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallSlopedCornerStealthTip" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthSlopedCornerBase" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthSlopedCorner" />
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="SmallStealthHalfSlopedCornerBase" />
+            </Blocks>
+        </BlockVariantGroup>
+        
+    </BlockVariantGroups>
+</Definitions>

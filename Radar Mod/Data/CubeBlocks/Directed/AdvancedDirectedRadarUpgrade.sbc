@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>DirectedRadarFOF</SubtypeId>
+			</Id>
+			<DisplayName>Directed Radar Friend or Foe module</DisplayName>
+			<Description>Shows whether the targetted grid is friendly or not</Description>
+			<Icon>Icons\LargeAdvancedModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\AdvancedDirectedRadarUpgrade.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="25" />
+      				<Component Subtype="Capacitor" Count="50" />
+      				<Component Subtype="Superconductor" Count="50" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="150" />
+        			<Component Subtype="AdvancedComputer" Count="80" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.08" StartY="0.09" EndX="0.92" EndY="0.91"/>
+				<MountPoint Side="Back" StartX="0.08" StartY="0.08" EndX="0.92" EndY="0.92"/>
+				<MountPoint Side="Left" StartX="0.07" StartY="0.00" EndX="0.93" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.06" StartY="0.00" EndX="0.94" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.07" EndX="1.00" EndY="0.93"/>
+			</MountPoints>
+			<BlockPairName>DirectedRadarFOFUpgrade</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+			<Id>
+				<TypeId>UpgradeModule</TypeId>
+				<SubtypeId>DirectedRadarAdvancedTargetting</SubtypeId>
+			</Id>
+			<DisplayName>Directed Radar Advanced Targetting module</DisplayName>
+			<Description>Shows advanced information on radar target</Description>
+			<Icon>Icons\LargeAdvancedModule.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\AdvancedDirectedRadarUpgrade.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="80" />
+       				<Component Subtype="Construction" Count="35" />
+      				<Component Subtype="LargeTube" Count="25" />
+      				<Component Subtype="Capacitor" Count="50" />
+      				<Component Subtype="Superconductor" Count="50" />
+        			<Component Subtype="CopperWire" Count="80" />
+				<Component Subtype="Computer" Count="150" />
+        			<Component Subtype="AdvancedComputer" Count="80" />
+        			<Component Subtype="SteelPlate" Count="40" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.08" StartY="0.09" EndX="0.92" EndY="0.91"/>
+				<MountPoint Side="Back" StartX="0.08" StartY="0.08" EndX="0.92" EndY="0.92"/>
+				<MountPoint Side="Left" StartX="0.07" StartY="0.00" EndX="0.93" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.06" StartY="0.00" EndX="0.94" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.08" EndX="1.00" EndY="0.92"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.07" EndX="1.00" EndY="0.93"/>
+			</MountPoints>
+			<BlockPairName>DirectedRadarAdvancedTargettingUpgrade</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

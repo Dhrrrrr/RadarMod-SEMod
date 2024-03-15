@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <CubeBlocks>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCube</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Block</DisplayName>
+      <Icon>Icons\StealthCube.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCube.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_2.mwm" RandomOrientation="true" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySquarePlateConstruction_3.mwm" RandomOrientation="true" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCube</BlockPairName>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthSlope</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Slope</DisplayName>
+      <Icon>Icons\StealthSlope.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthSlope.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="13" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySlopePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySlopePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySlopePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthSlope</BlockPairName>
+	<MirroringX>None</MirroringX>
+	<MirroringY>Z</MirroringY>
+	<MirroringZ>Y</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCorner</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Corner</DisplayName>
+      <Icon>Icons\StealthCorner.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCorner.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyFacePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyFacePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyFacePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCorner</BlockPairName>
+	<MirroringX>MinusHalfY</MirroringX>
+	<MirroringY>MinusHalfZ</MirroringY>
+	<MirroringZ>HalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthInvCorner</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Inv. Corner</DisplayName>
+      <Icon>Icons\StealthInvCorner.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthInvCorner.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="21" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyInvFacePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyInvFacePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyInvFacePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthInvCorner</BlockPairName>
+	<MirroringX>MinusHalfY</MirroringX>
+	<MirroringY>MinusHalfZ</MirroringY>
+	<MirroringZ>HalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCornerSquare</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Corner Square</DisplayName>
+      <Icon>Icons\StealthCornerSquare.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCornerSquare.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="7" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\CornerSquareConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\CornerSquareConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\CornerSquareConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCornerSquare</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCornerSquareInv</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Corner Square Inv.</DisplayName>
+      <Icon>Icons\StealthCornerSquareInv.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCornerSquareInv.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="19" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Back" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Right" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\CornerSquareInvertedConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\CornerSquareInvertedConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\CornerSquareInvertedConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCornerSquareInv</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthSlope2x1x1Base</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Slope 2x1x1 Base</DisplayName>
+      <Icon>Icons\StealthSlope2x1x1Base.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthSlope2x1x1Base.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="19" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySlope2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySlope2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySlope2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthSlope2x1x1Base</BlockPairName>
+	<MirroringX>None</MirroringX>
+	<MirroringY>Z</MirroringY>
+	<MirroringZ>Y</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthSlope2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Slope 2x1x1 Tip</DisplayName>
+      <Icon>Icons\StealthSlope2x1x1Tip.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthSlope2x1x1Tip.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySlope2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySlope2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySlope2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthSlope2x1x1Tip</BlockPairName>
+	<MirroringX>None</MirroringX>
+	<MirroringY>Z</MirroringY>
+	<MirroringZ>Y</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHalfStealth</SubtypeId>
+      </Id>
+      <DisplayName>Half Stealth Block</DisplayName>
+      <Icon>Icons\HalfStealth.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeHalfStealth.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0.5" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySquarePlateSlabConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySquarePlateSlabConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySquarePlateSlabConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>HalfStealth</BlockPairName>
+	<MirroringX>None</MirroringX>
+	<MirroringY>Z</MirroringY>
+	<MirroringZ>Y</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHalfSlopeStealth</SubtypeId>
+      </Id>
+      <DisplayName>Half Slope Stealth</DisplayName>
+      <Icon>Icons\HalfSlopeStealth.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeHalfSlopeStealth.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.16" EndY="0.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.16" StartY="0" EndX="0.33" EndY="0.33" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.33" StartY="0" EndX="0.5" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="0.66" EndY="0.16" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.66" StartY="0" EndX="0.84" EndY="0.33" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.84" StartY="0" EndX="1.0" EndY="0.5" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavySquarePlateSlopeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavySquarePlateSlopeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavySquarePlateSlopeConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>HalfSlopeStealth</BlockPairName>
+	<MirroringX>None</MirroringX>
+	<MirroringY>Z</MirroringY>
+	<MirroringZ>Y</MirroringZ>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHalfSlopeCornerStealth</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Slope Corner</DisplayName>
+      <Icon>Icons\HalfSlopeCornerStealth.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeHalfSlopeCornerStealth.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.45" EndY="0.45" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.45" Side="Back" StartX="0.55" StartY="0.0"/>
+                <MountPoint EndX="0.55" EndY="0.55" Side="Bottom" StartX="1.0" StartY="1.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfSlopeCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfSlopeCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfSlopeCornerConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>HalfSlopeCornerStealth</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthHalfCorner</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Corner</DisplayName>
+      <Icon>Icons\StealthHalfCorner.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthHalfCorner.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Bottom" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Bottom" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfCornerConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthHalfCorner</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthHalfSlopedCorner</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Sloped Corner</DisplayName>
+      <Icon>Icons\StealthHalfSlopedCorner.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthHalfSlopedCorner.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="11" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Bottom" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Bottom" StartX="0.5" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfSlopedCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfSlopedCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfSlopedCornerConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthHalfSlopedCorner</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCorner2x1x1Base</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Corner 2x1x1 Base</DisplayName>
+      <Icon>Icons\StealthCorner2x1x1Base.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCorner2x1x1Base.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.2" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.2" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCorner2x1x1Base</BlockPairName>
+	<MirroringX>YHalfX</MirroringX>
+	<MirroringY>MinusHalfX</MirroringY>
+	<MirroringZ>HalfX</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthCorner2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Corner 2x1x1 Tip</DisplayName>
+      <Icon>Icons\StealthCorner2x1x1Tip.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthCorner2x1x1Tip.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.9" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.6" StartY="0.2" EndX="1" EndY="0.8" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0" EndX="1" EndY="0.2" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.2" StartY="0" EndX="0.8" EndY="0.4" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.8" StartY="0" EndX="1" EndY="0.5" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.5" EndY="0.5" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthCorner2x1x1Tip</BlockPairName>
+	<MirroringX>HalfZ</MirroringX>
+	<MirroringY>MinusHalfZ</MirroringY>
+	<MirroringZ>YHalfZ</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthInvCorner2x1x1Base</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Inv. Corner 2x1x1 Base</DisplayName>
+      <Icon>Icons\StealthInvCorner2x1x1Base.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthInvCorner2x1x1Base.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="22" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyInvCorner2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyInvCorner2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyInvCorner2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthInvCorner2x1x1Base</BlockPairName>
+	<MirroringX>HalfZ</MirroringX>
+	<MirroringY>MinusHalfZ</MirroringY>
+	<MirroringZ>YHalfZ</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthInvCorner2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Inv. Corner 2x1x1 Tip</DisplayName>
+      <Icon>Icons\StealthInvCorner2x1x1Tip.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthInvCorner2x1x1Tip.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="16" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Back" StartX="0.8" StartY="0.5" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0.5" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.8" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="0.2" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.5" EndX="0.5" EndY="1" />
+      </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyInvCorner2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyInvCorner2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyInvCorner2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthInvCorner2x1x1Tip</BlockPairName>
+	<MirroringX>HalfZ</MirroringX>
+	<MirroringY>MinusHalfZ</MirroringY>
+	<MirroringZ>YHalfZ</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHalfSlopeCornerInvStealth</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Slope Corner Inv.</DisplayName>
+      <Icon>Icons\HalfSlopeCornerInvStealth.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeHalfSlopeCornerInvStealth.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="23" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Front" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.6" EndY="0.6" Side="Front" StartX="0.5" StartY="0.5"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Top" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Top" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.6" Side="Top" StartX="0.4" StartY="0.5"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Left" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.6" Side="Left" StartX="0.4" StartY="0.5"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfSlopeCornerInvertedConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfSlopeCornerInvertedConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfSlopeCornerInvertedConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>HalfSlopeCornerInvStealth</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHalfSlopeInvStealth</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Slope Inv.</DisplayName>
+      <Icon>Icons\HalfSlopeInvStealth.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeHalfSlopeInvStealth.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="22" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Top" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.6" Side="Front" StartX="0.4" StartY="0.5"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Back" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.6" EndY="0.5" Side="Back" StartX="0.5" StartY="0.6"/>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfSlopeInvertedConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfSlopeInvertedConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfSlopeInvertedConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>HalfSlopeInvStealth</BlockPairName>
+	<MirroringX>Y</MirroringX>
+	<MirroringY>HalfZ</MirroringY>
+	<MirroringZ>None</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeSlopedCornerStealthTip</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Sloped Corner Tip</DisplayName>
+      <Icon>Icons\SlopedCornerStealthTip.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeSlopedCornerStealthTip.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Bottom" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Bottom" StartX="0.0" StartY="0.5"/>
+                <MountPoint EndX="0.2" EndY="0.5" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.2" EndY="0.4" Side="Back" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.1" Side="Back" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="0.2" EndY="0.1" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.8" EndY="0.4" Side="Left" StartX="0.2" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.8" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopedCornerTipConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopedCornerTipConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\SlopedCornerTipConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>SlopedCornerStealthTip</BlockPairName>
+	<MirroringX>MinusHalfY</MirroringX>
+	<MirroringY>ZHalfY</MirroringY>
+	<MirroringZ>HalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthSlopedCornerBase</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Sloped Corner Base</DisplayName>
+      <Icon>Icons\StealthSlopedCornerBase.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthSlopedCornerBase.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Back" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Top" StartX="0.0" StartY="1.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Top" StartX="0.5" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopedCornerBaseConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopedCornerBaseConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\SlopedCornerBaseConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthSlopedCornerBase</BlockPairName>
+	<MirroringX>MinusHalfY</MirroringX>
+	<MirroringY>ZHalfY</MirroringY>
+	<MirroringZ>HalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthSlopedCorner</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Sloped Corner</DisplayName>
+      <Icon>Icons\StealthSlopedCorner.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthSlopedCorner.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="13" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Bottom" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.2" EndY="0.5" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.8" EndY="0.4" Side="Back" StartX="0.2" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.1" Side="Back" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="0.2" EndY="0.1" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.8" EndY="0.4" Side="Right" StartX="0.2" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Right" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="1.0" Side="Front" StartX="0.5" StartY="0.0"/>
+                <MountPoint EndX="0.5" EndY="1.0" Side="Left" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.5" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopedCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopedCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\SlopedCornerConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthSlopedCorner</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+	
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStealthHalfSlopedCornerBase</SubtypeId>
+      </Id>
+      <DisplayName>Stealth Half Sloped Corner Base</DisplayName>
+      <Icon>Icons\StealthHalfSlopedCornerBase.png</Icon>
+      <Description>Absorbs radar waves to make object detection range shorter</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Armor\Block\LargeStealthHalfSlopedCornerBase.mwm</Model>
+      <Components>
+        <Component Subtype="StealthPlate" Count="11" />
+      </Components>
+      <CriticalComponent Subtype="StealthPlate" Index="0" />
+            <MountPoints>
+                <MountPoint EndX="0.0" EndY="0.0" Side="Bottom" StartX="1.0" StartY="1.0"/>
+                <MountPoint EndX="0.2" EndY="0.5" Side="Back" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.8" EndY="0.4" Side="Back" StartX="0.2" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.1" Side="Back" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="0.2" EndY="0.1" Side="Right" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="0.8" EndY="0.4" Side="Right" StartX="0.2" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Right" StartX="0.8" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Front" StartX="0.0" StartY="0.0"/>
+                <MountPoint EndX="1.0" EndY="0.5" Side="Left" StartX="0.0" StartY="0.0"/>
+            </MountPoints>
+      <EdgeType>Heavy</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HalfSlopedCornerBaseConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HalfSlopedCornerBaseConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Armor\HalfSlopedCornerBaseConstruction_3.mwm"/>
+            </BuildProgressModels>
+      <DisassembleRatio>3</DisassembleRatio>
+      <PCU>1</PCU>
+      <IsAirTight>true</IsAirTight>
+	  <BlockPairName>StealthHalfSlopedCornerBase</BlockPairName>
+	<MirroringX>HalfY</MirroringX>
+	<MirroringY>XHalfY</MirroringY>
+	<MirroringZ>MinusHalfY</MirroringZ>
+    </Definition>
+   </CubeBlocks>
+</Definitions>

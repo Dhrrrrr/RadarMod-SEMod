@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="RadarObjectGroup" />
+            <Icon>Icons\DirectedRadarLarge.png</Icon>
+            <DisplayName>Directed Radar Blocks</DisplayName>
+            <Description>Directed radar blocks</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="DirectedRadarLarge" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="DirectedRadarSmall" />
+
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarRangeUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAngleUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAccuracyUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarCountermeasureUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarFOF" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAdvancedTargetting" />
+
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarRangeUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAngleUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAccuracyUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarCountermeasureUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarFOFSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="DirectedRadarAdvancedTargettingSmall" />
+
+            </Blocks>
+        </BlockVariantGroup>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GeneralRadarObjectGroup" />
+            <Icon>Icons\SmallGeneralRadar.png</Icon>
+            <DisplayName>General Radar Blocks</DisplayName>
+            <Description>General radar blocks</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="GeneralRadarLarge" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="GeneralRadarSmall" />
+
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarRangeUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAngleUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAccuracyUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarCountermeasureUpgrade" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarFOF" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAdvancedTargetting" />
+
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarRangeUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAngleUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAccuracyUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarCountermeasureUpgradeSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarFOFSmall" />
+                <Block Type="MyObjectBuilder_UpgradeModule" Subtype="GeneralRadarAdvancedTargettingSmall" />
+
+            </Blocks>
+        </BlockVariantGroup>
+    </BlockVariantGroups>
+</Definitions>

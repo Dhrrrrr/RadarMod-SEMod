@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>LargeCountermeasureLauncher</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="720" ShootSoundName="ArcWeFireworkShot" ShotsInBurst="40" />
+            <DeviateShotAngle>8</DeviateShotAngle>
+            <DeviateShotAngleAiming>8</DeviateShotAngleAiming>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="FlareClip" />
+                <AmmoMagazine Subtype="ChaffTube" />
+            </AmmoMagazines>
+            <ReloadTime>8000</ReloadTime>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>SmallCountermeasureLauncher</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="300" ShootSoundName="ArcWeFireworkShot" ShotsInBurst="12" />
+            <DeviateShotAngle>8</DeviateShotAngle>
+            <DeviateShotAngleAiming>8</DeviateShotAngleAiming>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="FlareClip" />
+                <AmmoMagazine Subtype="ChaffTube" />
+            </AmmoMagazines>
+            <ReloadTime>12000</ReloadTime>
+        </Weapon>
+
+    </Weapons>
+
+</Definitions>

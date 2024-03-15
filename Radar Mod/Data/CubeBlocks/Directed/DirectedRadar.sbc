@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+			<Id>
+				<TypeId>RadioAntenna</TypeId>
+				<SubtypeId>DirectedRadarLarge</SubtypeId>
+			</Id>
+			<DisplayName>Directed Radar</DisplayName>
+			<Description>Powerful and accurate detection within a short cone.</Description>
+			<Icon>Icons\DirectedRadarLarge.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\DirectedRadarLarge.mwm</Model>
+			<Components>
+       				<Component Subtype="SteelPlate" Count="50" />
+       				<Component Subtype="Construction" Count="15" />
+       				<Component Subtype="Electromagnet" Count="50" />
+      				<Component Subtype="LargeTube" Count="15" />
+      				<Component Subtype="Capacitor" Count="10" />
+      				<Component Subtype="Superconductor" Count="10" />
+        			<Component Subtype="CopperWire" Count="50" />
+				<Component Subtype="Computer" Count="150" />
+        			<Component Subtype="AdvancedComputer" Count="70" />
+        			<Component Subtype="SteelPlate" Count="25" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.20" EndX="1.00" EndY="0.80"/>
+			</MountPoints>
+			<BlockPairName>DirectedRadar</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+			<Id>
+				<TypeId>RadioAntenna</TypeId>
+				<SubtypeId>DirectedRadarSmall</SubtypeId>
+			</Id>
+			<DisplayName>Small Directed Radar</DisplayName>
+			<Description>Powerful and accurate detection within a short cone.</Description>
+			<Icon>Icons\SmallDirectedRadar.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\DirectedRadarSmall.mwm</Model>
+			<Components>
+        			<Component Subtype="SteelPlate" Count="3" />
+       				<Component Subtype="Construction" Count="2" />
+       				<Component Subtype="Electromagnet" Count="8" />
+      				<Component Subtype="LargeTube" Count="5" />
+        			<Component Subtype="CopperWire" Count="10" />
+				<Component Subtype="Computer" Count="20" />
+        			<Component Subtype="AdvancedComputer" Count="25" />
+        			<Component Subtype="SteelPlate" Count="2" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.04" StartY="0.40" EndX="0.96" EndY="0.60"/>
+				<MountPoint Side="Left" StartX="0.77" StartY="0.00" EndX="0.99" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.04" StartY="0.38" EndX="0.96" EndY="0.62"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.00" EndX="0.20" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.40" StartY="0.04" EndX="0.60" EndY="0.96"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.20"/>
+				<MountPoint Side="Bottom" StartX="0.39" StartY="0.04" EndX="0.61" EndY="0.96"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.80" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>DirectedRadar</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
