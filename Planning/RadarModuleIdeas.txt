@@ -1,0 +1,37 @@
+Not linked to any main:
+Lock on detector
+
+
+
+
+Directed:
+
+Range Upgrade\
+Detection Angle Update\
+Accuracy Upgrade\
+
+Stealth Detection Upgrade\
+Anti-Countermeasure Upgrade\
+
+Friend or Foe Module\
+Advanced Tracking Module\
+
+
+
+
+General Radar:
+
+Range Upgrade\
+Accuracy Upgrade\
+
+Stealth Detection Upgrade\
+Anti-Countermeasure Upgrade\
+
+Friend or Foe module\
+
+
+
+
+Electronic Warfare:
+Range Upgrade
+Effectiviness Upgrade
